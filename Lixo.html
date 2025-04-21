@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <title>Lembrete Importante</title>
+  <style>
+    body {
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      min-height: 100vh; 
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      color: #333;
+      text-align: center;
+      padding: 50px;
+      font-family: 'Comic Sans MS', cursive;
+      min-height: 100vh;  
+      margin: 0;
+    }
+    .alerta {
+      font-size: 3em;
+      color: #e63946;
+      animation: piscar 1s infinite;
+    }
+    @keyframes piscar {
+      0% { opacity: 1; }
+      50% { opacity: 0.2; }
+      100% { opacity: 1; }
+    }
+    .imagem-lixo {
+      margin-top: 20px;
+    }
+    img {
+      width: 300px;
+      border-radius: 20px;
+    }
+
+    p {
+      margin: 0;
+      margin-bottom: 10px; /* ou outro valor que você quiser para o espaçamento */
+    }
+
+  </style>
+</head>
+<body>
+  <h1 class="alerta">🚨 ALERTA DE LIXO 🚨</h1>
+  <p><Strong>Ei, Hadjah!</Strong><p>
+  <p> Joga logo esse lixo fora, antes que ele jogue você 🗑️😂 </p>
+
+    <img id="gifLixo" src="">
+
+    <script>
+      const gifs = ["gif1.gif", "gif2.gif", "gif3.gif", "gif4.gif", "gif5.gif", "gif6.gif", "gif7.gif", "gif8.gif", "gif9.gif",]; // sua lista de gifs locais
+      const escolhido = gifs[Math.floor(Math.random() * gifs.length)];
+      document.getElementById("gifLixo").src = escolhido;
+    </script>
+
+    <p class="Recompensa"><strong>Recompensa:</strong> <p>
+    <p>Um planeta mais limpo e um balde vazio 💚</p>
+
+</body>
+</html>
